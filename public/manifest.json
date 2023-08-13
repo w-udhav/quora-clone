@@ -1,0 +1,16 @@
+{
+  "name": "Quora Clone",
+  "short_name": "Quora",
+  "description": "A simplified Quora clone for learning purposes",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#B92B27",
+  "icons": [
+    {
+      "src": "../src/assets/icons/icon.png",
+      "sizes": "256x256",
+      "type": "image/jpg"
+    }
+  ]
+}
