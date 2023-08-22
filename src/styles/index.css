@@ -2,6 +2,16 @@
   box-sizing: border-box;
 }
 
+:root{
+  --backG: #F1F2F2;
+  --text: #282829;
+  --icon: #636466;
+  --otherBackground: #EFEFEF;
+  --buttonsLight: #B92B27;
+  --buttonsDark: #A72420;
+  --links: #3E74FF;
+}
+
 html,
 body {
   margin: 0;
