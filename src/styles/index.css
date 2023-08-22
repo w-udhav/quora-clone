@@ -2,8 +2,8 @@
   box-sizing: border-box;
 }
 
-:root{
-  --backG: #F1F2F2;
+:root {
+  --backG: #FFFFFF;
   --text: #282829;
   --icon: #636466;
   --otherBackground: #EFEFEF;
@@ -16,4 +16,71 @@ html,
 body {
   margin: 0;
   padding: 0;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.navBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75px;
+  width: 100vw;
+  background-color: var(--backG);
+}
+
+.container {
+  height: 90%;
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.quora img {
+  height: 90px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+}
+
+.search {
+  height: 35px;
+  width: 325px;
+  border: 1px solid #DEE0E1;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search input {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.extra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px;
+}
+
+.tryQuora {
+  height: 30px;
+  width: 100px;
+  margin: 0px 8px;
+  padding: 0px 15px;
+  border: 1px solid #DEE0E1;
+  border-radius: 30%;
+}
+.tryQuora p{
+  size: 25px;
 }
