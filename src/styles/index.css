@@ -159,7 +159,7 @@ main {
 .hr {
   width: 95%;
   height: 1px;
-  border: 1px solid var(--text);
+  border: 1px solid #979696;
 }
 .hov:hover {
   background-color: #d9dbde; /*var(--icon) #c7c9cd;*/
@@ -179,7 +179,72 @@ main {
   color: #979696;
 }
 .right {
+  display: flex;
+  flex-direction: column;
+  gap:10px;
   margin-left: 20px;
   margin-right: 20px;
   border: 1px solid blueviolet;
+  width: 100%; /*wha tto add here rem or 100*/
+  border-radius: 5px; /*if this is required */
+}
+.rightUpper {
+  border: 1px solid orangered;
+  padding: 15px;
+  background-color: white;
+  width: 100%;/*should i add this*/
+  border-radius: 5px;
+}
+.inputs {
+  display: flex;
+  justify-content: space-evenly;
+}
+.inputs input {
+  padding: 5px;
+  width: 85%;
+  border: 1px solid #979696;
+  border-radius: 17px;
+  font-size: 1rem;
+  color:#979696;
+  background-color:var(--otherBackground);
+}
+.inp input{
+  color:#979696
+}
+.inp:hover{
+  transition:0.3s;
+  background-color: #e5e5e6;/* #e9e9ea*/
+}
+.icones {
+  /* border: 1px solid blue; */
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 7px;
+  padding-bottom: 0px;
+  font-size: 1.5rem;
+}
+.text{
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 90px;
+  padding-right: 90px;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  gap:7px;
+}
+.text p{
+  font-size:1rem;
+}
+.hovv:hover{
+  background-color: #efefefc0;/*#f0ededc0;*/
+
+  transition:0.3s;
+  border-radius: 10px;
+
+}
+.rightLower{
+  border:1px solid green;
+
 }
