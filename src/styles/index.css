@@ -1,21 +1,27 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
-  --backG: #FFFFFF;
+  --backG: #ffffff;
   --text: #282829;
   --icon: #636466;
-  --otherBackground: #EFEFEF;
-  --buttonsLight: #B92B27;
-  --buttonsDark: #A72420;
-  --links: #3E74FF;
+  --otherBackground: #efefef;
+  --buttonsLight: #b92b27;
+  --buttonsDark: #a72420;
+  --links: #3e74ff;
 }
 
-html,
+/* html,
 body {
   margin: 0;
   padding: 0;
+} */
+body {
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
 }
 
 #wrapper {
@@ -53,7 +59,7 @@ body {
 .search {
   height: 35px;
   width: 325px;
-  border: 1px solid #DEE0E1;
+  border: 1px solid #dee0e1;
   border-radius: 2px;
   display: flex;
   justify-content: center;
@@ -74,13 +80,106 @@ body {
 }
 
 .tryQuora {
-  height: 30px;
-  width: 100px;
+  /* height: 30px; */
+  /* width: 100px; */
   margin: 0px 8px;
-  padding: 0px 15px;
-  border: 1px solid #DEE0E1;
-  border-radius: 30%;
+  padding: 8px 13px;
+  border: 1px solid #dee0e1;
+  border-radius: 50px;
+  font-size: 13px;
 }
-.tryQuora p{
-  size: 25px;
+/* my code here */
+main {
+  background-color: var(--otherBackground);
+  overflow-y: auto;
+  overflow-x: hidden; /*where to put this*/
+  display: flex;
+  justify-content: center;
+}
+.mainContent {
+  margin-top: 20px;
+  display: flex;
+  width: 65rem;
+  border: 1px solid red;
+  overflow-y: auto;
+  overflow-x: hidden; /*where to put this */
+}
+.left {
+  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /*100vh; or 768px*/
+  width: 18%; /* 18% */
+}
+.leftupper {
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 62%;
+  /* width: 30%; */
+}
+/* .leftupper ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+} */
+.createSpace {
+  /* border: 1px solid yellow; */
+  width: 100%;
+  text-align: center;
+  border-radius: 7px;
+  padding: 15px 10px;
+  background-color: #e6e5e5;
+}
+.items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.image {
+  width: 70%;
+  height: 8%;
+
+  display: flex;
+  /* justify-content:center; */
+  align-items: center;
+  /* padding: 2%; */
+  /* margin:5px;  */
+}
+
+.image a {
+  margin-left: 10px;
+  font-size: 0.8rem;
+  color: var(--text);
+  font-weight: 350;
+}
+.hr {
+  width: 95%;
+  height: 1px;
+  border: 1px solid var(--text);
+}
+.hov:hover {
+  background-color: #d9dbde; /*var(--icon) #c7c9cd;*/
+  transition: 0.3s;
+  border-radius: 3px;
+}
+.leftLower {
+  border: 1px solid greenyellow;
+  height: 100;
+}
+.leftLowerC {
+  text-align: start;
+}
+.leftLowerC a {
+  display: inline;
+  font-size: 0.8rem;
+  color: #979696;
+}
+.right {
+  margin-left: 20px;
+  margin-right: 20px;
+  border: 1px solid blueviolet;
 }
