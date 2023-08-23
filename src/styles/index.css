@@ -12,6 +12,7 @@
   --buttonsLight: #b92b27;
   --buttonsDark: #a72420;
   --links: #3e74ff;
+  --address:#7b7a7a;
 }
 
 /* html,
@@ -132,6 +133,7 @@ main {
   border-radius: 7px;
   padding: 15px 10px;
   background-color: #e6e5e5;
+  font-size:0.85rem;
 }
 .items {
   display: flex;
@@ -142,6 +144,8 @@ main {
 .image {
   width: 70%;
   height: 8%;
+  /* padding:15px; */
+  padding-left:-17px;
 
   display: flex;
   /* justify-content:center; */
@@ -162,9 +166,10 @@ main {
   border: 1px solid #979696;
 }
 .hov:hover {
-  background-color: #d9dbde; /*var(--icon) #c7c9cd;*/
+  background-color:#d9dbde; /*var(--icon) #c7c9cd;*/
   transition: 0.3s;
   border-radius: 3px;
+  /* padding:10px; */
 }
 .leftLower {
   border: 1px solid greenyellow;
@@ -181,7 +186,7 @@ main {
 .right {
   display: flex;
   flex-direction: column;
-  gap:10px;
+  gap: 10px;
   margin-left: 20px;
   margin-right: 20px;
   border: 1px solid blueviolet;
@@ -192,7 +197,7 @@ main {
   border: 1px solid orangered;
   padding: 15px;
   background-color: white;
-  width: 100%;/*should i add this*/
+  width: 100%; /*should i add this*/
   border-radius: 5px;
 }
 .inputs {
@@ -205,15 +210,15 @@ main {
   border: 1px solid #979696;
   border-radius: 17px;
   font-size: 1rem;
-  color:#979696;
-  background-color:var(--otherBackground);
+  color: #979696;
+  background-color: var(--otherBackground);
 }
-.inp input{
-  color:#979696
+.inp input {
+  color: #979696;
 }
-.inp:hover{
-  transition:0.3s;
-  background-color: #e5e5e6;/* #e9e9ea*/
+.inp:hover {
+  transition: 0.3s;
+  background-color: #e5e5e6; /* #e9e9ea*/
 }
 .icones {
   /* border: 1px solid blue; */
@@ -224,27 +229,91 @@ main {
   padding-bottom: 0px;
   font-size: 1.5rem;
 }
-.text{
+.text {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 90px;
   padding-right: 90px;
-  display:flex;
+  display: flex;
   justify-content: center;
-  align-items:center;
-  gap:7px;
+  align-items: center;
+  gap: 7px;
 }
-.text p{
-  font-size:1rem;
+.text p {
+  font-size: 1rem;
 }
-.hovv:hover{
-  background-color: #efefefc0;/*#f0ededc0;*/
+.hovv:hover {
+  background-color: #efefefc0; /*#f0ededc0;*/
 
-  transition:0.3s;
+  transition: 0.3s;
   border-radius: 10px;
+}
+.rightLower {
+  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  background-color: white;
+  border-radius:5px;
+}
+.profiling {
+  /* border: 1px solid palevioletred; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right:10px;
+  padding-bottom:3px;
+}
+.leftProfile {
+  display: flex;
+}
+.account {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
 
 }
-.rightLower{
-  border:1px solid green;
+.name h4 {
+  display: inline;
+  font-weight:600;
+}
+.follow{
+  color:#3e74ff;
+}
+.address{
+  padding-top:5px; /*for that space in between the lines*/
+}
+.address p {
+  display: inline;
+  color:var(--address);
+  font-size: 0.9rem;
+}
+.photo{
+  padding-right: 5px;
 
+}
+.cross{
+  padding:10px;
+}
+.btn{
+  border:none;
+}
+.question{
+  /* border:1px solid burlywood; */
+  /* margin-top: 0px; */
+  padding-left:10px;
+  padding-right:10px;
+}
+.answer{
+  /* border:1px solid olive; */
+  padding-left:10px;
+  padding-right:10px;
+}
+.picture{
+  background-color:#9D9EA2 ;
+  display:flex;
+  justify-content:center;
+  background-size: cover;
 }
