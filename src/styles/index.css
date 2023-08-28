@@ -12,7 +12,7 @@
   --buttonsLight: #b92b27;
   --buttonsDark: #a72420;
   --links: #3e74ff;
-  --address:#7b7a7a;
+  --address: #7b7a7a;
 }
 
 /* html,
@@ -23,6 +23,11 @@ body {
 body {
   font-family: "Inter", sans-serif;
   overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text);
 }
 
 #wrapper {
@@ -100,25 +105,28 @@ main {
 .mainContent {
   margin-top: 20px;
   display: flex;
+  gap: 15px;
   width: 65rem;
   border: 1px solid red;
   overflow-y: auto;
   overflow-x: hidden; /*where to put this */
 }
 .left {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   display: flex;
   flex-direction: column;
-  height: 100vh; /*100vh; or 768px*/
+  gap: 10px;
+  color: var(--address);
   width: 18%; /* 18% */
 }
 .leftupper {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 62%;
+  gap: 2px;
+  /* justify-content: space-evenly; */
+  /* align-items: center; */
+  /* height: 62%; */
   /* width: 30%; */
 }
 /* .leftupper ul {
@@ -127,13 +135,24 @@ main {
   justify-content: space-evenly;
 } */
 .createSpace {
-  /* border: 1px solid yellow; */
-  width: 100%;
   text-align: center;
   border-radius: 7px;
-  padding: 15px 10px;
+  padding: 5px 10px;
   background-color: #e6e5e5;
-  font-size:0.85rem;
+  font-size: 0.85rem;
+  border: none;
+  cursor: pointer;
+  color: var(--icon);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.createSpace span:nth-child(1) {
+  font-size: 1.3rem;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .items {
   display: flex;
@@ -142,38 +161,42 @@ main {
   align-items: center;
 }
 .image {
-  width: 70%;
-  height: 8%;
+  /* width: 70%; */
+  /* height: 8%; */
   /* padding:15px; */
-  padding-left:-17px;
+  /* padding-left: -17px; */
 
   display: flex;
+  padding: 8px;
   /* justify-content:center; */
   align-items: center;
   /* padding: 2%; */
   /* margin:5px;  */
 }
+.image img {
+  width: 20px;
+}
 
 .image a {
   margin-left: 10px;
   font-size: 0.8rem;
-  color: var(--text);
-  font-weight: 350;
+  font-weight: 400;
+  color: var(--icon);
 }
 .hr {
-  width: 95%;
+  width: 100%;
   height: 1px;
-  border: 1px solid #979696;
+  border-bottom: 1px solid #d4d4d4;
 }
 .hov:hover {
-  background-color:#d9dbde; /*var(--icon) #c7c9cd;*/
-  transition: 0.3s;
+  background-color: #d9dbde; /*var(--icon) #c7c9cd;*/
+  /* transition: 0.3s all ease-in-out; */
   border-radius: 3px;
+  cursor: pointer;
   /* padding:10px; */
 }
 .leftLower {
-  border: 1px solid greenyellow;
-  height: 100;
+  /* border: 1px solid greenyellow; */
 }
 .leftLowerC {
   text-align: start;
@@ -187,8 +210,8 @@ main {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
+  /* margin-left: 20px; */
+  /* margin-right: 20px; */
   border: 1px solid blueviolet;
   width: 100%; /*wha tto add here rem or 100*/
   border-radius: 5px; /*if this is required */
@@ -254,7 +277,7 @@ main {
   flex-direction: column;
   gap: 7px;
   background-color: white;
-  border-radius:5px;
+  border-radius: 5px;
 }
 .profiling {
   /* border: 1px solid palevioletred; */
@@ -263,8 +286,8 @@ main {
   justify-content: space-between;
   padding-top: 10px;
   padding-left: 10px;
-  padding-right:10px;
-  padding-bottom:3px;
+  padding-right: 10px;
+  padding-bottom: 3px;
 }
 .leftProfile {
   display: flex;
@@ -273,47 +296,45 @@ main {
   display: flex;
   flex-direction: column;
   /* justify-content: space-between; */
-
 }
 .name h4 {
   display: inline;
-  font-weight:600;
+  font-weight: 600;
 }
-.follow{
-  color:#3e74ff;
+.follow {
+  color: #3e74ff;
 }
-.address{
-  padding-top:5px; /*for that space in between the lines*/
+.address {
+  padding-top: 5px; /*for that space in between the lines*/
 }
 .address p {
   display: inline;
-  color:var(--address);
+  color: var(--address);
   font-size: 0.9rem;
 }
-.photo{
+.photo {
   padding-right: 5px;
-
 }
-.cross{
-  padding:10px;
+.cross {
+  padding: 10px;
 }
-.btn{
-  border:none;
+.btn {
+  border: none;
 }
-.question{
+.question {
   /* border:1px solid burlywood; */
   /* margin-top: 0px; */
-  padding-left:10px;
-  padding-right:10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
-.answer{
+.answer {
   /* border:1px solid olive; */
-  padding-left:10px;
-  padding-right:10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
-.picture{
-  background-color:#9D9EA2 ;
-  display:flex;
-  justify-content:center;
+.picture {
+  background-color: #9d9ea2;
+  display: flex;
+  justify-content: center;
   background-size: cover;
 }

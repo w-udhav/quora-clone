@@ -11,7 +11,13 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
   <body>
@@ -49,8 +55,12 @@
       <main>
         <div class="main">
           <div class="mainContent">
+            <!-- Left Side (Main) -->
             <div class="left">
-              <div class="createSpace hov">+ Create Space</div>
+              <button class="createSpace hov">
+                <span>+</span>
+                <span>Create Space</span>
+              </button>
               <div class="leftupper">
                 <!-- <ul class="items"> -->
                 <div class="image hov">
@@ -58,14 +68,14 @@
                     src="../src/assets/images/image1o.png"
                     alt="Biology Image"
                   />
-                  <a>Biology</a>
+                  <a href="#">Biology</a>
                 </div>
                 <div class="image hov">
                   <img
                     src="../src/assets/images/image2o.png"
                     alt="Chemistry Image"
                   />
-                  <a>Chemistry</a>
+                  <a href="#">Chemistry</a>
                 </div>
 
                 <div class="image hov">
@@ -73,140 +83,152 @@
                     src="../src/assets/images/image3o.png"
                     alt="Fine Art Image"
                   />
-                  <a>Fine Art</a>
+                  <a href="#">Fine Art</a>
                 </div>
                 <div class="image hov">
                   <img
                     src="../src/assets/images/image4o.png"
                     alt="Fashion and Style Image"
                   />
-                  <a>Fashion and Style</a>
+                  <a href="#">Fashion and Style</a>
                 </div>
                 <div class="image hov">
                   <img
                     src="../src/assets/images/image5o.png"
                     alt="Cooking Image"
                   />
-                  <a>Cooking</a>
+                  <a href="#">Cooking</a>
                 </div>
                 <div class="image hov">
                   <img
                     src="../src/assets/images/image6o.png"
                     alt="Music Image"
                   />
-                  <a>Music</a>
+                  <a href="#">Music</a>
                 </div>
                 <div class="image hov">
                   <img
                     src="../src/assets/images/image7o.png"
                     alt="Writing Image"
                   />
-                  <a>Writing</a>
+                  <a href="#">Writing</a>
                 </div>
                 <div class="image hov">
                   <img
                     src="../src/assets/images/image8o.png"
                     alt="Science Image"
                   />
-                  <a>Science</a>
-                </div>
-                <div class="hr">
-                  <!-- <hr style="color: chartreuse;"> -->
+                  <a href="#">Science</a>
                 </div>
                 <!-- </ul> -->
               </div>
+
+              <!-- Spacer -->
+              <div class="hr"></div>
+
+              <!-- Other Links -->
               <div class="leftLower">
                 <div class="leftLowerC">
                   <div>
-                    <ul style="list-style-type: disc;">
+                    <ul style="list-style-type: disc">
                       <a>About &bull;</a>
                       <a>Careers &bull;</a>
                     </ul>
                   </div>
                   <div>
-                    <ul style="list-style: disc;">
+                    <ul style="list-style: disc">
                       <a>Terms &bull;</a>
                       <a>Privacy &bull;</a>
                     </ul>
                   </div>
                   <div>
-                    <ul style="list-style: disc;">
+                    <ul style="list-style: disc">
                       <a>Acceptable Use &bull;</a>
                     </ul>
                   </div>
                   <div>
-                    <ul style="list-style: disc;">
+                    <ul style="list-style: disc">
                       <a>Business &bull;</a>
                       <a>Press &bull;</a>
                     </ul>
                   </div>
                   <div>
-                    <ul style="list-style: disc;">
+                    <ul style="list-style: disc">
                       <a>Your Ad Choices</a>
                     </ul>
                   </div>
                 </div>
               </div>
             </div>
+
             <div class="right">
               <div class="rightUpper">
                 <div class="inputs">
-                  <img src="../src/assets/images/profiles.png" alt="profile">
-                  <input class="inp " type="text" placeholder="What do you want to ask or share?">
+                  <img src="../src/assets/images/profiles.png" alt="profile" />
+                  <input
+                    class="inp"
+                    type="text"
+                    placeholder="What do you want to ask or share?"
+                  />
                 </div>
                 <div class="icones">
                   <!-- <img src="../src/assets/icons/profile1o.zip"> -->
                   <div class="text hovv">
-                    <i class="fa-solid fa-clipboard-question" style="color:var(--icon)"></i>
+                    <i
+                      class="fa-solid fa-clipboard-question"
+                      style="color: var(--icon)"
+                    ></i>
                     <p>Ask</p>
                   </div>
 
-                  
-                  <img src="../src/assets/icons/profile2.svg" alt="separation" style="color: #979696;">
+                  <img
+                    src="../src/assets/icons/profile2.svg"
+                    alt="separation"
+                    style="color: #979696"
+                  />
                   <div class="text hovv">
-                    <i class="fa-regular fa-pen-to-square" style="color:var(--icon)"></i>
+                    <i
+                      class="fa-regular fa-pen-to-square"
+                      style="color: var(--icon)"
+                    ></i>
                     <p>Answer</p>
                   </div>
-                  <img src="../src/assets/icons/profile2.svg" alt="separation">
+                  <img
+                    src="../src/assets/icons/profile2.svg"
+                    alt="separation"
+                  />
                   <div class="text hovv">
-                    <i class="fa-solid fa-pen" style="color:var(--icon);"></i>
+                    <i class="fa-solid fa-pen" style="color: var(--icon)"></i>
                     <p>posts</p>
                   </div>
-                  
-
-
-                  
-
                 </div>
-                
-                
               </div>
               <!-- right lower to be done tomorrow -->
               <div class="rightLower">
                 <div class="profiling">
                   <div class="leftProfile">
                     <div class="photo">
-                      <img src="../src/assets/images/picture1.png" alt="Dp">
+                      <img src="../src/assets/images/picture1.png" alt="Dp" />
                     </div>
                     <div class="account">
                       <div class="name">
-                        <h4>Ram Taneja </h4>
+                        <h4>Ram Taneja</h4>
                         <h4 class="follow">&bull; Follow</h4>
                       </div>
                       <div class="address">
-                        <p>Lived in Kakinada,Andhra Pradesh,India </p>
+                        <p>Lived in Kakinada,Andhra Pradesh,India</p>
                         <p>&bull; Updated 4y</p>
                       </div>
                     </div>
                   </div>
                   <div class="cross">
                     <button class="btn">
-                      <i class="fa-solid fa-xmark fa-xl" style="color:var(--icon);"></i>
+                      <i
+                        class="fa-solid fa-xmark fa-xl"
+                        style="color: var(--icon)"
+                      ></i>
                     </button>
-                    
-
                   </div>
-
                 </div>
                 <!-- question -->
                 <div class="question">
@@ -214,13 +236,19 @@
                 </div>
                 <!-- answer -->
                 <div class="answer">
-                  <p>He is the lift operator inour apartment who works from morning 8 to night 8,every morning I use lift exactly between 9.20 to 9.25 and evryday I see him sitting with anxiety looking at the phone in hand.(He doesn't even turn his head towards us.) 
-                    With almost no conversation this old works in a place where he knows nobody.And there's no holiday for him.He has to work all the 7 days in a week.
+                  <p>
+                    He is the lift operator inour apartment who works from
+                    morning 8 to night 8,every morning I use lift exactly
+                    between 9.20 to 9.25 and evryday I see him sitting with
+                    anxiety looking at the phone in hand.(He doesn't even turn
+                    his head towards us.) With almost no conversation this old
+                    works in a place where he knows nobody.And there's no
+                    holiday for him.He has to work all the 7 days in a week.
                   </p>
                 </div>
                 <!-- picture -->
                 <div class="picture">
-                  <img src="../src/assets/images/Post1.png" alt="Post 1">
+                  <img src="../src/assets/images/Post1.png" alt="Post 1" />
                 </div>
                 <!-- like -->
                 <div class="engagement">
@@ -235,8 +263,6 @@
           </div>
         </div>
       </main>
-
-      
     </div>
   </body>
 </html>
