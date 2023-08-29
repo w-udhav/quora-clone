@@ -13,6 +13,9 @@
   --buttonsDark: #a72420;
   --links: #3e74ff;
   --address: #7b7a7a;
+  --border1: #d9dbde;
+  --boxShadow1: rgba(17, 17, 26, 0.1) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
 }
 
 /* html,
@@ -28,6 +31,10 @@ body {
 a {
   text-decoration: none;
   color: var(--text);
+}
+
+button {
+  cursor: pointer;
 }
 
 #wrapper {
@@ -107,12 +114,10 @@ main {
   display: flex;
   gap: 15px;
   width: 65rem;
-  border: 1px solid red;
   overflow-y: auto;
   overflow-x: hidden; /*where to put this */
 }
 .left {
-  /* border: 1px solid green; */
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -120,20 +125,11 @@ main {
   width: 18%; /* 18% */
 }
 .leftupper {
-  /* border: 1px solid blue; */
   display: flex;
   flex-direction: column;
   gap: 2px;
-  /* justify-content: space-evenly; */
-  /* align-items: center; */
-  /* height: 62%; */
-  /* width: 30%; */
 }
-/* .leftupper ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-} */
+
 .createSpace {
   text-align: center;
   border-radius: 7px;
@@ -161,17 +157,9 @@ main {
   align-items: center;
 }
 .image {
-  /* width: 70%; */
-  /* height: 8%; */
-  /* padding:15px; */
-  /* padding-left: -17px; */
-
   display: flex;
   padding: 8px;
-  /* justify-content:center; */
   align-items: center;
-  /* padding: 2%; */
-  /* margin:5px;  */
 }
 .image img {
   width: 20px;
@@ -190,14 +178,10 @@ main {
 }
 .hov:hover {
   background-color: #d9dbde; /*var(--icon) #c7c9cd;*/
-  /* transition: 0.3s all ease-in-out; */
   border-radius: 3px;
   cursor: pointer;
-  /* padding:10px; */
 }
-.leftLower {
-  /* border: 1px solid greenyellow; */
-}
+
 .leftLowerC {
   text-align: start;
 }
@@ -212,28 +196,30 @@ main {
   gap: 10px;
   /* margin-left: 20px; */
   /* margin-right: 20px; */
-  border: 1px solid blueviolet;
-  width: 100%; /*wha tto add here rem or 100*/
+  /* border: 1px solid blueviolet; */
+  width: 60%; /*wha tto add here rem or 100*/
   border-radius: 5px; /*if this is required */
 }
 .rightUpper {
-  border: 1px solid orangered;
-  padding: 15px;
+  border: 1px solid var(--border1);
+  padding: 10px;
   background-color: white;
   width: 100%; /*should i add this*/
-  border-radius: 5px;
+  border-radius: 3px;
+  box-shadow: var(--boxShadow1);
 }
 .inputs {
   display: flex;
-  justify-content: space-evenly;
+  gap: 10px;
 }
 .inputs input {
-  padding: 5px;
-  width: 85%;
-  border: 1px solid #979696;
+  padding: 4px 8px;
+  width: 100%;
+  border: 1px solid #b9b9b9;
   border-radius: 17px;
-  font-size: 1rem;
-  color: #979696;
+  font-size: 14px;
+  color: black;
+  outline: none;
   background-color: var(--otherBackground);
 }
 .inp input {
@@ -244,10 +230,9 @@ main {
   background-color: #e5e5e6; /* #e9e9ea*/
 }
 .icones {
-  /* border: 1px solid blue; */
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   padding-top: 7px;
   padding-bottom: 0px;
   font-size: 1.5rem;
@@ -255,42 +240,45 @@ main {
 .text {
   padding-top: 8px;
   padding-bottom: 8px;
-  padding-left: 90px;
-  padding-right: 90px;
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 7px;
+  cursor: pointer;
+}
+.text i {
+  color: var(--icon);
+  font-size: 16px;
 }
 .text p {
-  font-size: 1rem;
+  font-size: 15px;
+  text-transform: capitalize;
 }
 .hovv:hover {
   background-color: #efefefc0; /*#f0ededc0;*/
 
   transition: 0.3s;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 .rightLower {
-  border: 1px solid green;
+  border: 1px solid var(--border1);
   display: flex;
   flex-direction: column;
-  gap: 7px;
+  gap: 5px;
   background-color: white;
-  border-radius: 5px;
+  border-radius: 3px;
+  box-shadow: var(--boxShadow1);
 }
 .profiling {
-  /* border: 1px solid palevioletred; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 3px;
+  padding: 10px;
 }
 .leftProfile {
   display: flex;
+  gap: 5px;
 }
 .account {
   display: flex;
@@ -303,6 +291,8 @@ main {
 }
 .follow {
   color: #3e74ff;
+  font-size: 14px;
+  font-weight: 600;
 }
 .address {
   padding-top: 5px; /*for that space in between the lines*/
@@ -315,23 +305,27 @@ main {
 .photo {
   padding-right: 5px;
 }
-.cross {
-  padding: 10px;
-}
+
 .btn {
   border: none;
 }
-.question {
-  /* border:1px solid burlywood; */
-  /* margin-top: 0px; */
-  padding-left: 10px;
-  padding-right: 10px;
+
+.post_content {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 8px;
+  color: var(--text);
 }
-.answer {
-  /* border:1px solid olive; */
-  padding-left: 10px;
-  padding-right: 10px;
+.post_content h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
 }
+.post_content p {
+  font-size: 15px;
+  line-height: 21px;
+}
+
 .picture {
   background-color: #9d9ea2;
   display: flex;
