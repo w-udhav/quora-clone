@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Quora Clone</title>
+    <script src="js/script.js" defer></script>
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -165,11 +166,7 @@
               <div class="rightUpper">
                 <div class="inputs">
                   <img src="../src/assets/images/profiles.png" alt="profile" />
-                  <input
-                    class="inp"
-                    type="text"
-                    placeholder="What do you want to ask or share?"
-                  />
+                  <button class="inp">What do you want to ask or share?</button>
                 </div>
                 <div class="icones">
                   <!-- <img src="../src/assets/icons/profile1o.zip"> -->
@@ -203,59 +200,93 @@
                   </div>
                 </div>
               </div>
+
+              <!-- Form -->
+              <div class="inputForm">
+                <div id="inputForm_header">
+                  <h3>What's on your mind?</h3>
+                  <button id="formDeactivate" class="hovv">Cancel</button>
+                </div>
+                <div id="inputForm_content">
+                  <!-- Title -->
+                  <div>
+                    <p class="inputForm_title">Title</p>
+                    <input type="text" id="postTitle" />
+                  </div>
+                  <div>
+                    <p class="inputForm_title">Description</p>
+                    <textarea
+                      type="text"
+                      cols="30"
+                      rows="7"
+                      id="postDescription"
+                      placeholder="Start your question with 'What', 'How', 'Why', etc."
+                    ></textarea>
+                  </div>
+
+                  <div>
+                    <p class="inputForm_title">
+                      Choose image to upload (optional)
+                    </p>
+                    <input type="file" id="postFile" accept="image/*" />
+                  </div>
+
+                  <button id="postBtn">Post</button>
+                </div>
+              </div>
               <!-- right lower to be done tomorrow -->
-              <div class="rightLower">
-                <div class="profiling">
-                  <div class="leftProfile">
-                    <div class="photo">
-                      <img src="../src/assets/images/picture1.png" alt="Dp" />
-                    </div>
-                    <div class="account">
-                      <div class="name">
-                        <h4>Ram Taneja</h4>
-                        <span class="follow">&bull; Follow</span>
+              <div class="view">
+                <!-- Sample Post -->
+                <div class="rightLower">
+                  <div class="profiling">
+                    <div class="leftProfile">
+                      <div class="photo">
+                        <img src="../src/assets/images/picture1.png" alt="Dp" />
                       </div>
-                      <div class="address">
-                        <p>Lived in Kakinada,Andhra Pradesh,India</p>
-                        <p>&bull; Updated 4y</p>
+                      <div class="account">
+                        <div class="name">
+                          <h4>Ram Taneja</h4>
+                          <span class="follow">&bull; Follow</span>
+                        </div>
+                        <div class="address">
+                          <p>Lived in Kakinada,Andhra Pradesh,India</p>
+                          <p>&bull; Updated 4y</p>
+                        </div>
                       </div>
                     </div>
+                    <div class="cross">
+                      <button class="btn">
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                    </div>
                   </div>
-                  <div class="cross">
-                    <button class="btn">
-                      <i
-                        class="fa-solid fa-xmark fa-xl"
-                        style="color: var(--icon)"
-                      ></i>
-                    </button>
-                  </div>
-                </div>
 
-                <!-- Content -->
-                <div class="post_content">
-                  <h3>What is the saddest thing that you've ever seen?</h3>
+                  <!-- Content -->
+                  <div class="post_content">
+                    <h3>What is the saddest thing that you've ever seen?</h3>
 
-                  <p>
-                    He is the lift operator inour apartment who works from
-                    morning 8 to night 8,every morning I use lift exactly
-                    between 9.20 to 9.25 and evryday I see him sitting with
-                    anxiety looking at the phone in hand.(He doesn't even turn
-                    his head towards us.) With almost no conversation this old
-                    works in a place where he knows nobody.And there's no
-                    holiday for him.He has to work all the 7 days in a week.
-                  </p>
-                </div>
-                <!-- picture -->
-                <div class="picture">
-                  <img src="../src/assets/images/Post1.png" alt="Post 1" />
-                </div>
-                <!-- like -->
-                <div class="engagement">
-                  <div class="engage">
-                    <div class="leftDiv"></div>
-                    <div class="rightDiv"></div>
+                    <p>
+                      He is the lift operator inour apartment who works from
+                      morning 8 to night 8,every morning I use lift exactly
+                      between 9.20 to 9.25 and evryday I see him sitting with
+                      anxiety looking at the phone in hand.(He doesn't even turn
+                      his head towards us.) With almost no conversation this old
+                      works in a place where he knows nobody.And there's no
+                      holiday for him.He has to work all the 7 days in a week.
+                    </p>
                   </div>
-                  <div class="more"></div>
+                  <!-- picture -->
+                  <div class="picture">
+                    <img src="../src/assets/images/Post1.png" alt="Post 1" />
+                  </div>
+                  <!-- like -->
+                  <div class="engagement">
+                    <div class="engage">
+                      <div class="leftDiv"></div>
+                      <div class="rightDiv"></div>
+                    </div>
+                    <div class="more"></div>
+                  </div>
                 </div>
               </div>
             </div>

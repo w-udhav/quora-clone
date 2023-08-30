@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Inter", sans-serif;
 }
 
 :root {
@@ -18,14 +19,12 @@
     rgba(17, 17, 26, 0.1) 0px 0px 8px;
 }
 
-/* html,
+html {
+  scroll-behavior: smooth;
+}
 body {
-  margin: 0;
-  padding: 0;
-} */
-body {
-  font-family: "Inter", sans-serif;
   overflow-x: hidden;
+  background: #efefef;
 }
 
 a {
@@ -42,6 +41,10 @@ button {
   flex-direction: column;
 }
 
+header * {
+  border: 1px solid red;
+}
+
 .navBar {
   display: flex;
   justify-content: center;
@@ -52,8 +55,6 @@ button {
 }
 
 .container {
-  height: 90%;
-  width: 80%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -212,7 +213,7 @@ main {
   display: flex;
   gap: 10px;
 }
-.inputs input {
+.inputs button {
   padding: 4px 8px;
   width: 100%;
   border: 1px solid #b9b9b9;
@@ -220,11 +221,11 @@ main {
   font-size: 14px;
   color: black;
   outline: none;
+  text-align: left;
+  color: var(--icon);
   background-color: var(--otherBackground);
 }
-.inp input {
-  color: #979696;
-}
+
 .inp:hover {
   transition: 0.3s;
   background-color: #e5e5e6; /* #e9e9ea*/
@@ -261,6 +262,92 @@ main {
   transition: 0.3s;
   border-radius: 8px;
 }
+
+.inputForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid var(--border1);
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: var(--boxShadow1);
+}
+#inputForm_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #b9b9b9;
+}
+#inputForm_header button {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(252, 76, 76);
+  outline: none;
+  border: none;
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+
+#inputForm_content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#inputForm_content button {
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  background: var(--buttonsLight);
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+}
+#inputForm_content button:hover {
+  background: var(--buttonsDark);
+}
+
+.inputForm_title {
+  font-weight: 600;
+  font-size: 14px;
+  color: rgb(105, 105, 105);
+}
+
+.inputForm input,
+textarea {
+  padding: 5px;
+  width: 100%;
+  border: 1px solid #b9b9b9;
+  border-radius: 3px;
+  font-size: 14px;
+  color: black;
+  outline: none;
+  text-align: left;
+  background-color: var(--otherBackground);
+}
+
+.inputForm input:focus,
+textarea:focus {
+  outline: rgb(189, 189, 189) solid 1px;
+}
+
+.inputForm div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.view {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .rightLower {
   border: 1px solid var(--border1);
   display: flex;
@@ -303,7 +390,15 @@ main {
   font-size: 0.9rem;
 }
 .photo {
-  padding-right: 5px;
+  /* padding-right: 5px; */
+  width: 35px;
+  height: 35px;
+}
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .btn {
@@ -331,4 +426,11 @@ main {
   display: flex;
   justify-content: center;
   background-size: cover;
+  width: 100%;
+  max-height: 500px;
+}
+.picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
